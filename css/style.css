@@ -4,7 +4,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: #222;
     color: white;
 }
 /*CABECALHO*/
@@ -14,12 +14,30 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
+    padding: 1px 15px;
     position: fixed;
     width: 100%;
     top: 0;
-    margin-left: -50px;
+    margin-left: 0px;
     font-size: 30px;
+}
+.topo_menu{
+    display: flex;
+    margin: 35px;
+    margin-right: 50px;
+}
+.topo_menu li {
+    margin: -30px;
+    justify-content: flex-end;
+    list-style: none;
+
+}
+.topo_menu li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    position: fixed;
+    margin-top: 20px;
 }
 /* Banner Principal */
 .banner{
@@ -27,13 +45,13 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 60vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 60px;
 }
 .banner h1{
     font-size: 40px;
@@ -43,6 +61,6 @@ body{
 /* Rodapé */
 .rodape{
     background-color: rgb(2, 2, 103);
-    /*padding: 20%;
-    text-align: center;*/
+    top: auto;
+    padding: 10px;
 }

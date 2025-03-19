@@ -1,137 +1,155 @@
 @charset "utf-8";
 body{
-    background: url('https://i.pinimg.com/736x/cf/23/05/cf23050976671fb9a5f186e58aa640ae.jpg') center/cover;
-    flex-direction: column;
-   justify-content: center;
-    align-items: center;
-    text-align: left;
-    padding: 20px;
-    position: absolute;
     margin: 0;
-
-}   
-  /*BANNER PRINCIPAL*/  
-#cabecalho{
-    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
     background-color: #222;
-   justify-content: space-between;
-   align-items: center;
-   padding:10px 15px;
-   position: absolute;
-   width: 100%;
-   top: 0;
-   margin-left:  -20px;
-   
+    color: white;
 }
-#cabecalho ul{
+  /*CABECALHO*/  
+.logo{
+    background-color: rgb(2, 2, 103);
+    color: white;
     display: flex;
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute;
-    top: 30px;
-    left: 1000px;
-}
-#cabecalho li{
-    margin-left: 20px;
-    background-color: white;
-    padding: 5px;
-    margin: -3px;
-    transition: background-color 1s;
-}
-#cabecalho li :hover{
-    background-color: #606060;
-}
-#cabecalho h1{
-   font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    color: black;
-    text-shadow: 1px 1px 1px white;
-    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 15px;
+    position: fixed;
     width: 100%;
-    font-weight:bold;
-    text-align: left;
-
-/*---------------------------*FILME1*----------------------------------------------------------------------------------*/
-}
-#filme1 img{
-    display: flex;
-    width: 25%;
-    border-radius: 50px;
-    margin-top: 100px;
-    margin-left: 50px;
-    min-width: 0px;
-    max-width: 200%;
-    right: 0px;
     top: 0;
+    margin-left: 0px;
+    font-size: 30px;
 }
-#filme1 h1{
+.topo_menu{
+    display: flex;
+    margin: 35px;
+    margin-right: 50px;
+}
+.topo_menu li {
+    margin: -30px;
+    justify-content: flex-end;
+    list-style: none;
+
+}
+.topo_menu li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    position: fixed;
+    margin-top: 20px;
+}
+/*----------------------Banner Principal-------------------------------------------------------------------------*/
+.banner{
+    background-image: url("-imagens/fundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+}
+.banner h1{
+    font-size: 40px;
+    color: black;
+    text-shadow: 2px 2px 2px rgb(153, 6, 6);
+}
+/*---------------------------*FILME1*----------------------------------------------------------------------------------*/
+
+.filme1 img{
+   width: 200px;
+   display: flex;
+   margin-left: 30px;
+   margin-top: 30px;
+   position: relative;
+
+}
+ .filme1 h1{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    color: red;
-    text-shadow: 1px 1px 1px blue;
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px 3px blue;
     padding: 0%;
     margin-bottom: 10px;
-    text-align: center;
-    height: 100%;
+    text-align: fixed;
     top: 0;
-    margin-top: -200px;
+    margin-top: -270px;
+    margin-left: 500px;
+    position: relative;
 
 }
-#filme1 p{
-    font-size: 25px;
-    font-weight: 100;
+.filme1 p{
+    font-size: 20px;
     line-height: 1.0;
     margin: 30%;
-    margin-top: -90px;
+    margin-top: 30px;
     margin-left: 500px;
     margin-right: 500px;
-    color: rgb(1, 17, 106);
-    text-shadow: 1px 1px 1px white;
-    
-   margin-bottom: 100px;
-   display: flex;
-   align-items: center;
+    color: white;
+    text-shadow: 3px 3px 3px blue;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: fixed/center;
 }
-#filme1 h2{
-    color: rgb(246, 246, 246);
-    display: flex;
-    margin-left: 550px;
-    margin-right: 500px;
-    margin-top: -30px;
-    text-shadow: 1px 1px 1px black;
-
-}
+/*-----------Classificação do Filme---------------*/
 #classificacao img{
-    width: 30px;
+    width: 20px;
     display: flex;
+    text-align: center;
     margin-left: 500px;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-right: 500px;
     border-radius: 50px;
-
+    position: relative;
 }
+#classificacao h2{
+    color: rgb(246, 246, 246);
+    display: flex;
+    text-align: center fixed;
+    margin-left: 550px;
+    margin-right: 500px;
+    margin-top: -17px;
+    text-shadow: 3px 3px 3px blue;
+    font-size: 15px;
+    position: relative;
+}
+/*--------------Trailer e Sessões do filme---------*/
+#btn_Trailer{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 70px;
+    margin-left: 600px;
+    font-size: 150%;
+    display: flex;
+    position: relative;
+    text-align: center fixed;
+}
+#btn_Sessoes{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: -47px;
+    border-radius: 5px;
+    margin-left: 800px;
+    font-size: 150%;
+    display: flex;
+    position: relative;
+    text-align: center/fixed;
+}
+
 /*---------rodape da pagina*-----*/
 #rodape{
-    display: flex;
-    background-color: #222;
-   justify-content: space-between;
-   align-items: center;
-   padding:100px 50px;
-   position: 200px;
-   width: 200%;
-   top: 0;
-   margin-left:  -20px;
-   
-
-}
-#Trailer{
-	display: flex;
-	margin-top: auto;
-	margin-left: 600px;
-    position: 200px;
-    font-size: 200%;
-    background-color: red;
-    width: 100px;
-    color: white;
-   
+    background-color: rgb(2, 2, 103);
+    top: auto;
+    padding: 10px;
 }
