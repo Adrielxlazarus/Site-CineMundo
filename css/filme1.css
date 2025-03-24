@@ -1,11 +1,13 @@
 @charset "utf-8";
 body{
-    margin: 0;
+    margin :0px;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     background-color: #222;
     color: white;
+    text-align: center;
+    align-items: center;
 }
   /*CABECALHO*/  
 .logo{
@@ -57,6 +59,8 @@ body{
     font-size: 40px;
     color: black;
     text-shadow: 2px 2px 2px rgb(153, 6, 6);
+    position: center;
+    margin: 10px 0;
 }
 /*---------------------------*FILME1*----------------------------------------------------------------------------------*/
 
@@ -65,7 +69,7 @@ body{
    display: flex;
    margin-left: 30px;
    margin-top: 30px;
-   position: relative;
+   position: 10px;
 
 }
  .filme1 h1{
@@ -75,25 +79,27 @@ body{
     text-shadow: 3px 3px 3px blue;
     padding: 0%;
     margin-bottom: 10px;
-    text-align: fixed;
+    text-align: center;
     top: 0;
-    margin-top: -270px;
-    margin-left: 500px;
-    position: relative;
+    margin-top: -280px;
+    margin-left: 50px;
+    
+   
 
 }
 .filme1 p{
     font-size: 20px;
     line-height: 1.0;
-    margin: 30%;
+    margin: 80%;
     margin-top: 30px;
     margin-left: 500px;
     margin-right: 500px;
     color: white;
     text-shadow: 3px 3px 3px blue;
     margin-bottom: 50px;
-    position: relative;
-    text-align: fixed/center;
+    align-items: center;
+    text-align: justify;
+    display: block;
 }
 /*-----------Classificação do Filme---------------*/
 #classificacao img{
@@ -105,6 +111,7 @@ body{
     margin-right: 500px;
     border-radius: 50px;
     position: relative;
+
 }
 #classificacao h2{
     color: rgb(246, 246, 246);
@@ -115,7 +122,8 @@ body{
     margin-top: -17px;
     text-shadow: 3px 3px 3px blue;
     font-size: 15px;
-    position: relative;
+    align-items: center;
+   
 }
 /*--------------Trailer e Sessões do filme---------*/
 #btn_Trailer{
@@ -152,4 +160,5 @@ body{
     background-color: rgb(2, 2, 103);
     top: auto;
     padding: 10px;
+    margin-bottom: auto;
 }
