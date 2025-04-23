@@ -1,9 +1,9 @@
 @charset "utf-8";
 body{
-    margin :0px;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: #222;
     color: white;
     text-align: center;
@@ -23,13 +23,18 @@ body{
     margin-left: 0px;
     font-size: 30px;
 }
+.logo a{
+    text-decoration: none;
+    color: white;
+    position: fixed;
+}
 .topo_menu{
     display: flex;
     margin: 35px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 .topo_menu li {
-    margin: -30px;
+    margin: -50px;
     justify-content: flex-end;
     list-style: none;
 
@@ -39,7 +44,8 @@ body{
     font-size: 20px;
     color: white;
     position: fixed;
-    margin-top: 20px;
+    margin-top: 40px;
+    right: 20px;
 }
 /*----------------------Banner Principal-------------------------------------------------------------------------*/
 .banner{
@@ -63,67 +69,65 @@ body{
     margin: 10px 0;
 }
 /*---------------------------*FILME1*----------------------------------------------------------------------------------*/
-
+.cartalogo_filmes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.filme1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    padding: 25px;
+}
 .filme1 img{
-   width: 200px;
-   display: flex;
-   margin-left: 30px;
-   margin-top: 30px;
-   position: 10px;
-
+  width: 250px;
+  border-radius: 10px;
+  display: flex;
+  margin-top: 20px;
+  margin-right: 75%;
 }
  .filme1 h1{
-    font-family: 'Times New Roman', Times, serif;
+    display: flex;
     font-size: 30px;
     color: white;
-    text-shadow: 3px 3px 3px blue;
-    padding: 0%;
-    margin-bottom: 10px;
-    text-align: center;
-    top: 0;
-    margin-top: -280px;
-    margin-left: 50px;
-    
-   
+    text-shadow: 3px 3px 3px blue;  
+    margin-top: -350px;
 
+    
 }
 .filme1 p{
     font-size: 20px;
-    line-height: 1.0;
-    margin: 80%;
     margin-top: 30px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 25%;
     color: white;
     text-shadow: 3px 3px 3px blue;
     margin-bottom: 50px;
     align-items: center;
-    text-align: justify;
-    display: block;
+    justify-items: center;
+    text-align: justify;  
+    display: flex; 
 }
 /*-----------Classificação do Filme---------------*/
 #classificacao img{
     width: 20px;
-    display: flex;
     text-align: center;
-    margin-left: 500px;
-    margin-top: 15px;
-    margin-right: 500px;
-    border-radius: 50px;
-    position: relative;
-
+    justify-items: center;
+    margin-left: 30%;
+    margin-top: 0;
+    display: flex;
 }
 #classificacao h2{
     color: rgb(246, 246, 246);
-    display: flex;
-    text-align: center fixed;
-    margin-left: 550px;
-    margin-right: 500px;
-    margin-top: -17px;
+    text-align: center;
+    margin-left: 33%;
+    margin-top: -20px;
     text-shadow: 3px 3px 3px blue;
-    font-size: 15px;
+    font-size: 17px;
     align-items: center;
-   
+    display: flex;
 }
 /*--------------Trailer e Sessões do filme---------*/
 #btn_Trailer{
