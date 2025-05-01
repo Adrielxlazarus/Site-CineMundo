@@ -49,7 +49,7 @@ body{
 }
 /*----------------------Banner Principal-------------------------------------------------------------------------*/
 .banner{
-    background-image: url("-imagens/fundo.png");
+    background-image: url("-imagens/bg-hero.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
