@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🎦CineMundo</title>
+
+    <!-- Slick.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!--Cabeçalho-->
-    <header id="Menu">
-        <a href="site-CineMundo.html"><div class="logo">🎦CineMundo</a>
-            <nav>
-                <ul class="topo_menu">
-                 <li><a href="login.html"> 👤Login</a></li>
-                </ul>
-            </nav>
+    <header id="Menu" class="topo">
+        <a href="site-CineMundo.html">
+            <div class="logo">🎦CineMundo
+        </a>
+        <nav>
+            <ul class="topo_menu">
+                <li><a href="login.html"> 👤Login</a></li>
+            </ul>
+        </nav>
         </div>
     </header>
     <!--Banner Principal---->
@@ -22,13 +43,13 @@
         <h1>Bem-vindo ao CineMundo</h1>
     </section>
     <!---Filmes em Cartaz-->
-    <section class ="cartaz">
+    <section class="cartaz">
         <h2>Filmes em Cartaz</h2>
-        <div class="cartalogo_filmes">
+        <div class="cartalogo_filmes filmeCarrousel">
             <div class="filme">
                 <a href="filme1.html"><img src="css/-imagens/filme1.webp" alt="1"></a>
-             <h3>Capitão América: Admirável Mundo Novo</h3>
-             <p> A14 - AÇÃO - 1h59</p>
+                <h3>Capitão América: Admirável Mundo Novo</h3>
+                <p> A14 - AÇÃO - 1h59</p>
             </div>
             <div class="filme">
                 <a href="#"><img src="css/-imagens/Thunderbolts_5.jpg" alt="2"></a>
@@ -60,28 +81,14 @@
                 <a href="#"><img src="css/-imagens/jurassic.webp" alt=""></a>
                 <h3>Jurassic World: Recomeço</h3>
             </div>
-         <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br> 
         </div>
     </section>
     <!--Rodapé-->
     <footer class="rodape">
-        <p> © 2025 - CineMundo - Brasil </p>
-        <p>ADRITON</p>
+        <p> © 2025 - CineMundo - Brasil - ADRITON </p>
     </footer>
+
+    <script src="./js/slick.js"></script>
 </body>
+
 </html>
