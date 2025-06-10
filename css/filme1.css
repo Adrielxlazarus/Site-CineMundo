@@ -1,11 +1,14 @@
 @charset "utf-8";
-body{
+*{
     margin:0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
+}
+body{
     background-color: #222;
     color: white;
+    justify-content: center;
     text-align: center;
     align-items: center;
 }
@@ -53,7 +56,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 30vh;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,30 +136,26 @@ body{
 #btn_Trailer{
     background-color: red;
     color: white;
-    padding: 10px 20px;
-    border: none;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 70px;
-    margin-left: 600px;
-    font-size: 150%;
-    display: flex;
-    position: relative;
-    text-align: center fixed;
+    margin-top: 10px;
+    font-size: 35px;
+    text-align: center;
 }
 #btn_Sessoes{
     background-color: red;
     color: white;
-    padding: 10px 20px;
-    border: none;
     cursor: pointer;
-    margin-top: -47px;
     border-radius: 5px;
-    margin-left: 800px;
-    font-size: 150%;
-    display: flex;
-    position: relative;
-    text-align: center/fixed;
+    margin-top: 10px;
+    font-size: 35px;
+    text-align: center;
+}
+.escolher{
+    justify-content: center;
+    text-align: center;
+    width: 70px 70px auto auto;
+    padding: 10px;
 }
 
 /*---------rodape da pagina*-----*/
